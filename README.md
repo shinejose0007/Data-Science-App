@@ -84,6 +84,7 @@ Users can explore the dataset and model insights interactively:
 - Supports **matplotlib** or **Plotly**. Automatically falls back if a plotting library is unavailable.
 
 ## 6. File Structure
+
 DataScience_streamlit_app/
 ├─ app.py # Main Streamlit app
 ├─ src/
@@ -97,3 +98,34 @@ DataScience_streamlit_app/
 │ ├─ model.joblib # Saved RandomForest model
 │ └─ scaler.joblib # Saved StandardScaler
 └─ docs/ # Document corpus for RAG
+
+
+
+## 7. Running the App
+Install dependencies:
+
+```bash
+pip install streamlit pandas numpy scikit-learn joblib matplotlib plotly faiss-cpu langchain
+
+
+streamlit run app.py --server.runOnSave false
+
+## 8. Key Notes
+
+Fully interactive and modular: extendable with real SAP connections, LLMs, or other ML models.
+
+RAG system uses embeddings + FAISS for fast document search.
+
+ML workflow demonstrates:
+
+Feature scaling
+
+Model training
+
+Prediction and probability estimation
+
+Explainable AI (feature importance)
+
+TensorFlow deprecation or Torch path warnings are harmless if PyTorch/TensorFlow are not used.
+
+✅ This app serves as a demo for a junior data scientist workflow, combining SAP-like data ingestion, classical ML, RAG for document QA, and interactive EDA — all within a single Streamlit interface.
