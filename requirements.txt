@@ -1,0 +1,12 @@
+pandas
+scikit-learn
+joblib
+numpy
+nltk
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.3; platform_system!='Windows'
+faiss-cpu; platform_system=='Windows'
+shap>=0.41.0
+matplotlib>=3.4
+jupyter
+streamlit>=1.18
