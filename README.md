@@ -84,4 +84,16 @@ Users can explore the dataset and model insights interactively:
 - Supports **matplotlib** or **Plotly**. Automatically falls back if a plotting library is unavailable.
 
 ## 6. File Structure
-
+DataScience_streamlit_app/
+├─ app.py # Main Streamlit app
+├─ src/
+│ ├─ train_model.py # Training logic for RandomForest
+│ ├─ sap_btp_mock.py # Mock SAP ingestion
+│ └─ rag.py # RAG implementation
+├─ data/
+│ ├─ synthetic_customers.csv
+│ └─ sap_ingested_mock.csv
+├─ models/
+│ ├─ model.joblib # Saved RandomForest model
+│ └─ scaler.joblib # Saved StandardScaler
+└─ docs/ # Document corpus for RAG
